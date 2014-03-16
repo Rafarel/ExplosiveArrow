@@ -1,0 +1,21 @@
+name: ExplosiveArrow
+main: com.rafarel.explosivearrow.ExplosiveArrow
+version: 0.0.0.101
+
+commands:
+  rambo:
+    description: Rambo gives you arrows & TNT !
+    usage: /rambo
+    
+permissions:
+    explosivearrow.*:
+        description: Gives access to all Explosive Arrow commands
+        children:
+            explosivearrow.rambo: true
+            explosivearrow.shoot: true
+    explosivearrow.rambo:
+        description: Allows you to refill arrows and tnt
+        default: op
+    explosivearrow.shoot:
+        description: Allows you to shoot an explosive arrow
+        default: op
